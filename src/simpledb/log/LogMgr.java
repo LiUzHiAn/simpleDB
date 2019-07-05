@@ -165,7 +165,7 @@ public class LogMgr implements Iterable<BasicLogRecord> {
 
     /**
      * 返回最近的一条log的LSN（log sequence number）
-     * 在这里，LSN只简单地用块号去实现，因此所有在一个块内的log信息拥有相同的LSN。
+     * 在这里，LSN只简单地用块号去标识，因此所有在一个块内的log信息拥有相同的LSN。
      * typically，常见的LSN实现方法是块号+当前log的起始位置
      * @return
      */
